@@ -15,8 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 350px;
-  height: 300px;
+  width: 250px;
+  height: 225px;
   background: rgba(255,255,255,0.2);
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0,0,0,0.15);
@@ -24,14 +24,14 @@
 }
 .container .card:hover
 {
-  height: 400px;
+  height: 350px;
 }
 .container .card .imgbx
 {
   position: absolute;
   top: 20px;
-  width: 300px;
-  height: 220px;
+  width: 200px;
+  height: 150px;
   background: #333;
   border-radius: 12px;
   overflow: hidden;
@@ -57,7 +57,7 @@
 .container .card .content
 {
   position: absolute;
-  top: 252px;
+  top: 170px;
   width: 100%;
   padding: 0 30px;
   height: 35px;
@@ -69,11 +69,11 @@
 .container .card:hover .content
 {
     height: 250px;
-    top: 130px;
+    top: 78px;
 }
 .container .card .content h2
 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   color: var(--clr);
 }
