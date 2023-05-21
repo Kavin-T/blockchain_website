@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+.hmp_content
+{
+    color: white;
+    word-wrap: break-word;
+    max-width: 840px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.hmp_content .intro p
+{
+    font-weight: 400;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 1em;
+    word-spacing: 2.5px;
+    line-height: 2em;
+}
+.hmp_content .techs h3
+{
+    font-size: 1.2em;
+}
+.hmp_content .techs p
+{
+    font-weight: 400;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 1em;
+    word-spacing: 2.5px;
+    line-height: 2em;
+}
+.about
+{
+    color: white;
+    word-wrap: break-word;
+    max-width: 840px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about h3
+{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.about p
+{
+    font-weight: 400;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 1em;
+    word-spacing: 2.5px;
+    line-height: 2em; 
+}
