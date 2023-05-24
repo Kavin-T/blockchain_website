@@ -57,7 +57,7 @@
 .container .card .content
 {
   position: absolute;
-  top: 170px;
+  top: 190px;
   width: 100%;
   padding: 0 30px;
   height: 35px;
@@ -73,13 +73,15 @@
 }
 .container .card .content h2
 {
+  height: 40px;
   font-size: 1.2em;
   font-weight: 700;
   color: var(--clr);
 }
 .container .card .content p
 {
-  color: #fff;
+  top: 100px;
+  color: white;
   
 }
 .container .card .content a
