@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>GlassCard</title>
+<link rel="stylesheet" href="css/transaction.css">
+<link rel="icon" href="blockchain icon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!--NAVBAR-->
+ <nav class="nav_bar">
+    <a href="index.html" class="logo">MASTERNODE</a>
+    <ul class="nav_items">
+        
+        <li class="nav_item">
+            <a href="index.html" class="nav_link">Intro</a>
+        </li>
+        <li class="nav_item">
+            <a href="Blockchain.html" class="nav_link">Blockchain</a>
+            
+        </li>
+        <li class="nav_item nav_sub_nav">
+            <div class="sample1"></div>
+            <a href="#" class="nav_link anytimeglow">Working Blockchain</a>
+            <!--subnav bar-->
+            <!--<div class="sample"></div>-->
+            <nav class="subnav">
+                <ul class="subnav_items">
+                <div class="sample">
+                    <li class="subnav_item">
+                        <a href="Terms_01.html" class="sub_item_link">Technical Terms</a>
+                    </li>
+                    <li class="subnav_item">
+                        <a href="Types of blockchain.html" class="sub_item_link">Types of Blockchain</a>
+                    </li>
+                    <li class="subnav_item">
+                        <a href="transaction.html" class="sub_item_link">Transaction Procedure</a>
+                    </li>
+                    <li class="subnav_item">
+                        <a href="Other platforms.html" class="sub_item_link">Other Platforms</a>
+                    </li>
+                </div>
+                </ul>
+            </nav>
+            <!--subnav bar-->
+        </li>
+        <li class="nav_item">
+            <a href="developer.html" class="nav_link">Developer Side</a>
+        </li>
+    </ul>
+</nav>
+<cav>
+    <ol class="pagination">
+        <li><a href='glass_1.html' class="prev">< Prev </a></li>
+        <li class="pagenumber"><a href="glass_1.html">1</a></li>
+        <li class="pagenumber"><a href="glass_4.html">2</a></li>
+        <li class="pagenumber"><a href="glass_2.html">3</a></li>
+        <li class="pagenumber"><a href="glass_3.html">4</a></li>
+        <li><a href='glass_3.html' class="next"> Next ></a></li>
+    </ol>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.pagination').find('.pagenumber.active').next().addClass('active');
+                $('.pagination').find('.pagenumber.active').prev().removeClass('active');
+            })
+            $('.next').click(function(){
+                $('.pagination').find('.pagenumber.active').next().addClass('active');
+                $('.pagination').find('.pagenumber.active').prev().removeClass('active');
+            })
+        })
+    </script>
+</cav>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>1. Hash function</h2>
+            <p>A hash function is a mathematical function that takes an input (or "message") and returns a 
+                fixed-size string of characters, which is typically a sequence of numbers and letters. The 
+                output, known as the hash value or hash code, is unique to the input data, meaning that even 
+                a small change in the input will produce a significantly different hash value.You may think wheather we can convert hash value to a orginal input message, it is not possible since it is a one way functions. Popular hash functions used today include the Secure Hash Algorithm (SHA) family (e.g., SHA-256, SHA-3), Message Digest Algorithm (MD5), and cryptographic hash functions like bcrypt and Argon2, commonly used for password hashing.</b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>2. Digital signature</h2>
+            <p>A digital signature is a cryptographic technique used to authenticate the integrity and origin of a digital document, message, or piece of information. It provides a way to verify that the data has not been tampered during transaction.<br><br>
+
+                For example, John want to send his homework documents to his friend Mike. John wants to do this in a secure manner so he select BLOCKCHAIN TECHNOLOGY...
+                First, a hash function is applied to the original documents to generate a fixed-size hash value or message digest. This hash value is unique to the input data and acts as a digital fingerprint of the documents. John uses his private key, which is a component of a public-key cryptography system, to encrypt the hash value. This process is known as signing the message. The encrypted hash value, along with the original documents, forms the digital signature. The signature is attached to the message and sent to the recipient.
+                So, this is how Digital signature created.Further what happens!!!! We will talk about that in "Transaction Procedures" module.
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>3. UTXO</h2>
+            <p>An unspent transaction output (UTXO) refers to a transaction output that can be used as input in a new transaction. At first time, it is vey difficult to understand the concepts of UTXO, but by understanding the following examples you will get a great knowledge on UTXO, really!!!.<br><br>
+                Consider,<br>
+                Raja has 0.45 BTC in his wallet. This isn’t a fraction of a coin as we might conceptualize it. It’s rather a collection of UTXOs. Specifically, two UTXOs worth 0.4 BTC, and 0.05 BTC – outputs from past transactions. Now let's imagine that raja needs to make a payment to bob of 0.3 BTC.
+                His only option here is to break up the 0.4 BTC unit and to send 0.3 BTC to Bob, and 0.1 BTC back to herself. He would normally reclaim less than 0.1 BTC due to mining fees, but let's simplify and leave the miner out.
+                Raja creates a transaction that essentially says to the network: take my 0.4 BTC UTXO as an input, break it up, send 0.3 BTC of it to Bob’s address and return the 0.1 BTC to my address. The 0.4 BTC is now a spent output, and can’t be reused. Meanwhile, two new UTXOs have been created (0.3 BTC and 0.1 BTC).
+                
+                Note that we broke up a UTXO in this example, but if Raja had to pay 0.42 BTC, he could just as easily have combined his 0.4 BTC with another 0.05 BTC to produce a UTXO worth 0.42 BTC, while returning 0.03 BTC to himself.
+                
+                Summing up, the UTXO model serves as the protocol’s mechanism for keeping track of where coins are at any given time.<br>
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>4.Transaction fees</h2>
+            <p>Transaction fees in Bitcoin and Ethereum are the fees paid by users to include their transactions in the respective blockchain networks.<br><br>
+
+                In Bitcoin,<br>
+                In Bitcoin, transaction fees are based on the size of the transaction in terms of the data it occupies in a block, measured in bytes. Transactions with more data (e.g., more inputs, outputs, or complex scripts) will have a larger size and require more computational resources to process. Miners prioritize 
+                transactions with higher fees per byte since it allows them to earn more for including those transactions in a block. Users have the option to specify the fee amount when sending a Bitcoin transaction, and if the fee is too low, the transaction may experience delays or may not be confirmed at all.<br><br>
+                
+                In Ethereum,<br>
+                Ethereum uses a concept called "Gas" to measure computational effort and determine transaction fees. Each operation in an Ethereum transaction consumes a certain amount of Gas, and Gas is priced in terms of Ether (ETH), the native cryptocurrency of the Ethereum network. The total transaction fee is calculated by multiplying
+                 the Gas consumed by the Gas price (specified by the user). Miners prioritize transactions with higher Gas prices, similar to Bitcoin, as it increases their potential earnings. Gas prices are typically denoted in units of Gwei (1 Gwei = 0.000000001 ETH).
+                
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>5. Unit of Ether:</h2>
+            <p>
+                •Wei (the smallest unit of Ether)<br>
+•Gwei (Gigawei, equal to 1,000,000,000 Wei)<br>
+•Mwei (Megawei, equal to 1,000,000,000,000 Wei)<br>
+•Kwei (Kilowei, equal to 1,000 Wei)<br>
+•Finney (equal to 1/1,000 Ether or 1,000,000,000 Wei)<br>
+•Szabo (equal to 1/1,000,000 Ether or 1,000,000,000,000 Wei)<br>
+•Ether (the base unit of Ethereum)<br>
+•Kether (Kiloether, equal to 1,000 Ether)<br>
+•Mether (Megaether, equal to 1,000,000 Ether)<br>
+•Gether (Gigaether, equal to 1,000,000,000 Ether)<br>
+
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>6.Gas
+                </h2>
+            <p>Gas is a unit of measurement representing the computational effort required to execute operations or smart contracts on the Ethereum 
+                network.Every operation in Ethereum's Virtual Machine (EVM) has a specific Gas cost associated with it. For example, to sum up two unsigned integers "3" gas required.<br><br>
+
+                Gas prices<br>
+                
+                The Gas Price represents the amount of Ether (ETH) the user is willing to pay per unit of Gas consumed. Higher Gas Prices incentivize miners 
+                to prioritize and include the transaction in the next block they mine.<br><br>
+                
+                Gas limit<br>
+                
+                Gas Limit refers to the maximum amount of Gas that can be consumed by all the operations within a block in the Ethereum blockchain. Miners and users 
+                define this limit to restrict the amount of computational work that can be performed in a block. The Gas Limit for a block in the Ethereum network is 
+                determined by the miner who creates that block. As a user, you can specify the Gas Limit for your transactions when submitting them to the network. What
+                 if higher gas limit set by minors they paid more than others!!! But tricky part comes here, By increasing the Gas Limit, miners provide the necessary computational
+                  resources for executing such smart contracts so, they set optimal gas limit which is required.<br><br>
+                
+                Gas used:<br>
+                
+                Gas Used represents the actual amount of Gas consumed by a specific transaction or smart contract execution.<br><br>
+                
+                For example, a simple transfer of Ether from one account to another has a Gas cost of 21,000 units of Gas. A more complex smart contract execution that involves
+                 multiple operations
+                 and storage changes may require a higher Gas cost.
+                
+                It's important to note that the Gas limit for a transaction or block must be set higher than the total Gas cost of the operations involved. Otherwise, the transaction 
+                or block will run out of Gas and fail before completion.
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>7.Minor</h2>
+            <p>A minor refers to a participant in the network who is responsible for validating and adding new transactions to the blockchain. Miners play a crucial role in maintaining the integrity and security of the blockchain network by confirming transactions and securing the consensus mechanism.
+                Minors also called as,<br>
+                •Validator<br>
+                •forger<br>
+                •Master node<br>
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>8. Validation and verification</h2>
+            <p>Validation<br>
+                Validation primarily focuses on checking the authenticity and correctness of individual transactions before they are added to the blockchain. The validation process ensures that a transaction meets specific criteria 
+                and adheres to the rules and consensus mechanisms of the blockchain network.<br><br>
+               
+               Verification<br>
+               It is a broader process that involves validating the entire blockchain's consistency and correctness, rather than individual transactions. Verification ensures that the transactions and blocks recorded in the blockchain have been properly validated.<br>
+               </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>9. Block reward</h2>
+            <p>Block reward refers to the cryptocurrency rewarded to a miner when they successfully validate a new block. The block reward is made of two components: 
+                the block subsidy and the transaction fees. Block reward is almost entirely made of the block subsidy, it is very common to see people talking about the
+                 block subsidy while referring to it as the block reward. So in popular terminology, the term “block reward” doesn’t account for the fees.
+
+                In the case of Bitcoin, the block subsidy started at 50 BTC and is being reduced in half every 210,000 blocks (approximately once every four years). 
+                Such a process is known as Bitcoin halving. Bitcoin’s block subsidy was reduced to 25 BTC in 2012, 12.5 BTC in 2016, and 6.25 BTC in 2020.<br><br>
+                
+                Why Halving ?<br>
+                In a broad term, since over a period of time the population of bitcoin users are more and therefore more minors are there. It's is not possible to give 
+                stable BTC to all minors, it not economical. This is due to the limited supply of new coins. This reduction in rewards helps manage the rate at which new coins are created and distributed. As more miners compete for the limited supply of new coins, each miner's share of the reward decreases.
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="bcaudio_body">
+    <audio controls class="bcaudio" src="Audios/second 10.wav">
+    
+    </audio>
+</body>
+</html>

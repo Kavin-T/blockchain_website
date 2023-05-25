@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GlassCard</title>
+<link rel="stylesheet" href="css/transaction.css">
+<link rel="icon" href="blockchain icon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!--NAVBAR-->
+ <nav class="nav_bar">
+    <a href="index.html" class="logo">MASTERNODE</a>
+    <ul class="nav_items">
+        
+        <li class="nav_item">
+            <a href="index.html" class="nav_link">Intro</a>
+        </li>
+        <li class="nav_item">
+            <a href="Blockchain.html" class="nav_link">Blockchain</a>
+            
+        </li>
+        <li class="nav_item nav_sub_nav">
+            <div class="sample1"></div>
+            <a href="#" class="nav_link anytimeglow">Working Blockchain</a>
+            <!--subnav bar-->
+            <!--<div class="sample"></div>-->
+            <nav class="subnav">
+                <ul class="subnav_items">
+                <div class="sample">
+                    <li class="subnav_item">
+                        <a href="Terms_01.html" class="sub_item_link">Technical Terms</a>
+                    </li>
+                    <li class="subnav_item">
+                        <a href="Types of blockchain.html" class="sub_item_link">Types of Blockchain</a>
+                    </li>
+                    <li class="subnav_item">
+                        <a href="transaction.html" class="sub_item_link">Transaction Procedure</a>
+                    </li>
+                    <li class="subnav_item">
+                        <a href="Other platforms.html" class="sub_item_link">Other Platforms</a>
+                    </li>
+                </div>
+                </ul>
+            </nav>
+            <!--subnav bar-->
+        </li>
+        <li class="nav_item">
+            <a href="developer.html" class="nav_link">Developer Side</a>
+        </li>
+    </ul>
+</nav>
+<cav>
+    <ol class="pagination">
+        <li><a href='glass_1.html' class="prev">< Prev </a></li>
+        <li class="pagenumber"><a href="glass_1.html">1</a></li>
+        <li class="pagenumber"><a href="glass_4.html">2</a></li>
+        <li class="pagenumber"><a href="glass_2.html">3</a></li>
+        <li class="pagenumber"><a href="glass_3.html">4</a></li>
+        <li><a href='glass_3.html' class="next"> Next ></a></li>
+    </ol>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.pagination').find('.pagenumber.active').next().addClass('active');
+                $('.pagination').find('.pagenumber.active').prev().removeClass('active');
+            })
+            $('.next').click(function(){
+                $('.pagination').find('.pagenumber.active').next().addClass('active');
+                $('.pagination').find('.pagenumber.active').prev().removeClass('active');
+            })
+        })
+    </script>
+</cav>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>1. Ethereum Virtual Machine</h2>
+            <p>The Ethereum Virtual Machine (EVM) is a runtime environment that executes smart contracts on the Ethereum blockchain.
+                 It is a crucial component of the Ethereum network and plays a significant role in the platform's functionality.<br>
+                Smart contracts on Ethereum are written in high-level languages such as Solidity and Vyper. These contracts are then compiled
+                 into bytecode, a low-level representation of the contract's instructions, which can be executed by the EVM. Each Ethereum node 
+                 participating in the network runs a copy of the EVM, enabling them to validate and execute smart contracts consistently.<br>
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>2. SHA 256</h2>
+            <p>HA-256 (Secure Hash Algorithm 256-bit) is a cryptographic hash function.
+                A cryptographic hash function takes an input (message or data) of any size
+                 and produces a fixed-size output, typically a sequence of digits or characters. 
+                 The primary purpose of a hash function is to ensure data integrity and provide a unique
+                  identifier for the input data. In the case of SHA-256, the output is always 256 bits (32 bytes) 
+                  in length.SHA-256 is commonly used in cryptocurrencies like Bitcoin, where it is used to secure 
+                  transactions and create unique identifiers for blocks of data. It is also utilized in password hashing, 
+                  digital signatures, certificate authorities, and other security protocols and applications.
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>3. Mining</h2>
+            <p>It refers to the process of validating and adding new transactions to the blockchain while also creating new units of the 
+                respective cryptocurrency as a reward. Mining plays a crucial role in maintaining the integrity and security of a decentralized 
+                blockchain network. Mining requires significant computational resources, specialized hardware, and substantial energy consumption. 
+                The difficulty of the mining process is adjusted regularly to maintain a consistent block time and ensure that new blocks are added to 
+                the blockchain approximately every 10 minutes (in the case of Bitcoin). New coins are generated as a reward for miners who successfully mine 
+                a new block in the blockchain. This process is known as coin generation or coinbase reward.</b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>4. Consensus mechanism</h2>
+            <p>A consensus mechanism refers to the method or protocol by which participants in a decentralized network agree on the state of the network and validate transactions. It ensures that all nodes in the network reach a consensus or agreement on the order and validity of transactions, thereby maintaining the integrity and consistency of the blockchain.
+                Consensus mechanisms are important in decentralized systems where there is no central authority or trusted third party. They enable participants to collectively establish a shared truth and prevent malicious actors from manipulating the network.<br>
+                There are several consensus mechanisms used in different blockchain networks, and each mechanism has its own set of rules and characteristics. Here are a few commonly used consensus mechanisms:<br> 1. Proof of Work (PoW)<br>
+                2.Proof of Stake (PoS)<br>
+                3.Delegated Proof of Stake (DPoS)<br>
+                4.Practical Byzantine Fault Tolerance (PBFT)<br>
+                5.Proof of Authority (PoA)<br>
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>5. Proof of Work</h2>
+            <p>Proof of Work (PoW) is a consensus mechanism used in blockchain networks to achieve agreement and validate
+                 transactions. It was introduced by Bitcoin and has been widely adopted by various cryptocurrencies. It requires 
+                 more energy for computation. This computation involves Solving the Puzzle, Miners start the process of mining by 
+                 attempting to solve a computationally challenging puzzle. This puzzle involves repeatedly hashing the block's data 
+                 (including the transactions and the previous block's reference) along with a random number called a nonce. The miners 
+                 iterate through different nonce values until they find a hash value that meets the network's predefined difficulty target. 
+                 Simply , miners compete to solve a computationally difficult mathematical puzzle. The primary goal is to find a solution, known 
+                 as the "proof of work," that meets specific criteria set by the network protocol. This solution requires significant computational power and effort.</b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>6. Proof of Stake (More Efficient)</h2>
+            <p>" Proof of Stake is a consensus mechanism used in blockchain networks as an alternative to Proof of Work (PoW). It aims to achieve agreement and validate transactions based on participants' ownership or stake in the cryptocurrency. Validators are chosen to create new blocks and validate transactions based on the number of coins they hold or "stake." The more coins a participant holds, the higher their chances of being selected as a validator. This mechanism removes the need for miners to compete in solving computationally intensive puzzles like in PoW. Instead, validators are selected based on their economic stake in the network.<br><br>
+                Here's an overview of how Proof of Stake typically works:<br>
+                •       Stake and Validator Selection: Participants who hold and lock a certain amount of the cryptocurrency are eligible to become validators. The selection process can vary among different PoS implementations, but generally, the probability of being chosen as a validator is proportional to the amount of cryptocurrency staked.<br>
+                •       Block Creation and Validation: Validators take turns being selected to create new blocks and validate transactions. The selected validator includes a set of transactions into a block and adds it to the blockchain. Validators are incentivized to act honestly and validate transactions correctly as they have a stake at risk.<br>
+                •       Block Verification: Other validators in the network verify the new block created by the selected validator. They check the validity of the transactions and ensure that the block adheres to the consensus rules. This verification process helps maintain the integrity and security of the blockchain.<br>
+                •       Consensus and Finality: Consensus is reached when a supermajority of validators agree on the validity of a block. Once a block is confirmed and added to the blockchain, it is considered final, meaning it cannot be easily reversed or altered.<br>
+                •       Validator Rewards: Validators are rewarded for their participation and contribution to the network's consensus process. The rewards typically come in the form of transaction fees associated with the validated transactions or newly created cryptocurrency units.<br>
+                Proof of Stake has gained popularity due to several advantages it offers compared to PoW. It is generally considered more energy-efficient since it eliminates the need for extensive computational power and reduces the environmental impact. PoS also has the potential to increase scalability and transaction throughput in blockchain networks.<br>
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>7. Difficulty</h2>
+            <p>The difficulty is a measure of how hard it is for miners to find a valid solution to the mathematical puzzle
+                required to mine a new block. It is adjusted periodically by the network protocol to maintain
+                a target block creation time, usually measured in minutes.</b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>8. Timestamp</h2>
+            <p>In a blockchain network, each block contains a timestamp that indicates
+                 the time of its creation. This timestamp is typically generated by the node 
+                 that mines or adds the block to the blockchain. By incorporating a timestamp into each block, 
+                 the blockchain creates an immutable record of events in a chronological order. This enables participants 
+                 in the network to verify the sequence of transactions and establish the validity of the blockchain's history.
+                  Moreover, the timestamp can be used as evidence or proof that a particular event occurred at a
+                 specific time, providing transparency and accountability.</b>
+            </p>
+        
+    </div>
+</div>
+<div class="glasscontent"></div>
+<div class="gcardcontainer">
+    <div class="gcardbody">
+            <h2>9. Merkle tree</h2>
+            <p>•      A Merkle tree is constructed by recursively hashing pairs of data(transaction) until a single hash,
+                 known as the root hash or Merkle root, is obtained. The construction of the tree starts with the leaves,
+                  which represent individual pieces of data, such as transactions in a blockchain.<br>
+                  •      To build the Merkle tree, the leaves are combined in pairs and hashed together. The resulting hashes, 
+                known as intermediate nodes, are then paired and hashed again. This process continues until a single hash, 
+                the Merkle root, is obtained. The Merkle root represents the entire set of data and serves as a compact and
+                 unique identifier for the entire dataset.<br>
+                 •          By having the Merkle root, participants in the blockchain network can verify that a specific transaction is
+                 included in a block without needing to download and process the entire block. Instead, they only need to obtain 
+                 the necessary hashes from the Merkle tree and compare them against the Merkle root provided by the block.<br>
+                 •         This property of Merkle trees allows for efficient and scalable verification in blockchain systems, as it reduces 
+                the amount of data that needs to be transmitted and processed. Additionally, Merkle trees provide security benefits, 
+                as any alteration or modification of a single transaction or piece of data in the block would lead to a change in the Merkle root, 
+                thus easily detecting tampering attempts.<br>
+                </b>
+            </p>
+        
+    </div>
+</div>
+<div class="bcaudio_body">
+    <audio controls class="bcaudio" src="Audios/third 10.wav">
+    
+    </audio>
