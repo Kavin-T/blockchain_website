@@ -34,7 +34,8 @@ ul,li{
     background-color: rgba(255,255,255,0.2);
     border:1px solid  rgba(255,255,255,0.2);
     border-radius: 5px;
-    
+    backdrop-filter: blur(7px);
+    box-shadow: 25px 25px 50px rgba(0,0,0,0.5);
 }
 .nav_items{
     display: flex;
